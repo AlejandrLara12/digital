@@ -62,12 +62,34 @@ export default {
                 content: 'digial,algebra,boolean,boleana',
             },
             {
+                hid: 'og:title',
                 property: 'og:title',
                 content: 'Digital',
             },
             {
+                hid: 'og:description',
                 property: 'og:description',
                 content: 'Principios de alebra booleana y electrónica digital',
+            },
+            {
+                hid: 'og:image',
+                property: 'og:image',
+                content: '../assets/imgs/digital-bg.jpg',
+            },
+            {
+                hid: 'og:image:width',
+                property: 'og:image:width',
+                content: '300',
+            },
+            {
+                hid: 'og:image:height',
+                property: 'og:image:height',
+                content: '300',
+            },
+            {
+                hid: 'og:type',
+                property: 'og:type',
+                content: 'website',
             },
         ],
     }),
