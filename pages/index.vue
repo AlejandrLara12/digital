@@ -61,6 +61,14 @@ export default {
                 name: 'keywords',
                 content: 'digial,algebra,boolean,boleana',
             },
+            {
+                property: 'og:title',
+                content: 'Digital',
+            },
+            {
+                property: 'og:description',
+                content: 'Principios de alebra booleana y electrónica digital',
+            },
         ],
     }),
 };
