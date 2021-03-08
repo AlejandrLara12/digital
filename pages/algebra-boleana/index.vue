@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Rule from '../components/Rule.vue';
+import Rule from '../../components/Rule.vue';
 
 export default {
     layout: 'default',
