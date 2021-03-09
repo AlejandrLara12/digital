@@ -24,20 +24,12 @@
         </figure>
 
         <ul>
-            <li>
+            <li v-for="link in links" :key="link.to">
                 <NuxtLink 
                   class="px-3 py-2 transition-colors duration-200 relative block hover:text-gray-900 text-gray-500"
-                  to="/algebra-boleana">
+                  :to="link.to">
                     <span class="rounded-md absolute inset-0 bg-cyan-50 opacity-0"></span>
-                    <span class="relative">Algebra Boleana</span>
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink 
-                  class="px-3 py-2 transition-colors duration-200 relative block hover:text-gray-900 text-gray-500"
-                  to="/complementos">
-                    <span class="rounded-md absolute inset-0 bg-cyan-50 opacity-0"></span>
-                    <span class="relative">Complementos</span>
+                    <span class="relative">{{ link.label }}</span>
                 </NuxtLink>
             </li>
         </ul>
@@ -93,6 +85,13 @@ export default {
             },
         ],
     }),
+    data: () => ({
+        links: [
+            { to: '/algebra-boleana', label: 'Algebra Boleana' },
+            { to: '/mapas-de-karnaugh', label: 'Mapas def Karnaugh' },
+            { to: '/complementos', label: 'Complementos' },
+        ]
+    })
 };
 </script>
 
